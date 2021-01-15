@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        logo: ["Optimus Princeps"]
+        logo: ["Optimus Princeps", "serif"]
       }
     },
   },
