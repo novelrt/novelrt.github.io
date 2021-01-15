@@ -4,14 +4,16 @@ import Layout from "../components/Layout";
 
 // markup
 const IndexPage = () => {
-  return (
-    <main>
-      <title>NovelRT</title>
-      <Layout>
-        <h1>Content</h1>
-      </Layout>
-    </main>
-  )
+    return (
+        <main>
+            <title>NovelRT</title>
+            <Layout>
+                <div className="md:px-12 lg:px-36 xl:px-46 2xl:px-64">
+                    <h1>Content</h1>
+                </div>
+            </Layout>
+        </main>
+    )
 }
 
 export default IndexPage
