@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Optimus Princeps";
+    src: url("../fonts/optimusprinceps-webfont.woff2");
+}
+
+.navbar-elements:last-child {
+    margin-right: 0px !important;
+}
