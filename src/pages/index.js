@@ -9,7 +9,7 @@ const IndexPage = () => {
             <title>NovelRT</title>
             <Layout>
                 <div id="main-branding" className="flex flex-col items-center py-12 md:px-12 lg:px-36 xl:px-46 2xl:px-64 bg-gradient-to-b from-green-400 via-blue-500 to-indigo-600">
-                    <p className="text-7xl">i</p>
+                    <p className="text-7xl">img</p>
                     <h1 className="my-4 text-5xl tracking-wide">
                         Meet NovelRT.
                     </h1>
