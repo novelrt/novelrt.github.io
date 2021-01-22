@@ -16,7 +16,7 @@ const IndexPage = () => {
                     <h2 className="text-lg mx-16 xl:w-1/2 text-center">
                         NovelRT is a low-ceremony multi-platform open source game engine with a strong focus on 2D Game Development and first-class support for Novel Game Development.
                     </h2>
-                    <div id="features" className="flex flex-col gap-12 xl:grid xl:grid-cols-3 xl:gap-x-20 mt-20 mx-28 xl:mx-36">
+                    <div id="features" className="flex flex-col gap-12 xl:grid xl:grid-cols-3 xl:gap-x-20 mt-20 mx-20 md:mx-28 xl:mx-36">
                         <div className="flex flex-col items-center">
                             <div className="bg-gray-100 rounded-full py-2 px-2 w-16 h-16 xl:w-14 xl:h-14 shadow-lg">
                                 <div className="text-gray-800">
@@ -58,8 +58,8 @@ const IndexPage = () => {
                         </div>
                     </div>
                 </div>
-                <div id="secondary-branding" className="flex flex-col gap-12 xl:gap-16 items-center py-16 md:px-12 lg:px-36 xl:px-46 2xl:px-64">
-                    <div class="flex flex-col xl:flex-row items-center xl:flex xl:items-center mx-36 xl:mx-64">
+                <div id="secondary-branding" className="flex flex-col gap-12 xl:gap-16 items-center py-16 md:px-12 lg:px-36 xl:px-46 2xl:px-64 mx-24 md:mx-36 xl:mx-64">
+                    <div class="flex flex-col xl:flex-row items-center xl:flex xl:items-center">
                         <div className="xl:mx-12">
                             <div className="bg-gradient-to-br from-green-400 via-blue-500 to-pink-600 rounded-full py-3 px-3 xl:py-6 xl:px-6 w-16 h-16 xl:w-36 xl:h-36 shadow">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -74,7 +74,7 @@ const IndexPage = () => {
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-col xl:flex-row items-center xl:flex xl:items-center mx-36 xl:mx-64">
+                    <div class="flex flex-col xl:flex-row items-center xl:flex xl:items-center">
                         <div className="xl:hidden">
                             <div className="bg-gradient-to-br from-green-400 via-blue-500 to-pink-600 rounded-full py-3 px-3 w-16 h-16 shadow">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
