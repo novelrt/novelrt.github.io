@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       fontFamily: {
         logo: ["Optimus Princeps", "serif"]
+      },
+      spacing: {
+        "88": "22rem"
       }
     },
   },
