@@ -60,7 +60,7 @@ const IndexPage = ({ data }) => {
                         </div>
                     </div>
                 </div>
-                <div id="secondary-branding" className="flex flex-col gap-12 xl:gap-16 items-center py-16 md:px-12 lg:px-36 xl:px-46 2xl:px-64 mx-24 md:mx-36 xl:mx-64 text-gray-800">
+                <div id="secondary-branding" className="flex flex-col gap-16 xl:gap-20 items-center py-28 md:px-12 lg:px-36 xl:px-46 2xl:px-64 mx-24 md:mx-36 xl:mx-64 text-gray-800">
                     <div className="flex flex-col xl:flex-row items-center xl:flex xl:items-center">
                         <div className="xl:mx-12">
                             <div className="bg-gradient-to-br text-gray-100 from-green-400 via-blue-500 to-pink-600 rounded-full py-3 px-3 xl:py-6 xl:px-6 w-16 h-16 xl:w-36 xl:h-36 shadow">
