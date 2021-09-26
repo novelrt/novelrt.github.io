@@ -54,7 +54,7 @@ class Navbar extends Component {
                 <div id="menu" className={menuConditionalclassNames + " w-full md:flex md:w-auto mb-4 md:mb-0"}>
                     <ul className="navbar-elements">
                         <NavbarElement linksTo="/" name="Home" />
-                        <NavbarElement linksTo="/" name="Documentation" />
+                        <NavbarElement linksTo="https://novelrt.github.io/NovelRT/" name="Documentation" />
                         <NavbarElement linksTo="/" name="News" />
                         <NavbarElement linksTo="/" name="Contribute" />
                     </ul>
