@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout";
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 
 // markup
@@ -11,7 +11,10 @@ const IndexPage = ({ data }) => {
             <title>NovelRT</title>
             <Layout>
                 <div id="main-branding" className="flex flex-col items-center py-12 md:px-12 lg:px-36 xl:px-46 2xl:px-64 bg-gradient-to-b from-green-400 via-blue-500 to-indigo-600">
-                    <Img className="w-64" fluid={data.novelchan.childImageSharp.fluid} alt="Novel-Chan: NovelRT's mascot!" />
+                    <GatsbyImage
+                        image={data.novelchan.childImageSharp.gatsbyImageData}
+                        className="w-64"
+                        alt="Novel-Chan: NovelRT's mascot!" />
                     <h1 className="my-4 text-5xl tracking-wide">
                         Meet NovelRT.
                     </h1>
@@ -101,22 +104,16 @@ const IndexPage = ({ data }) => {
                 </div>
             </Layout>
         </main>
-    )
+    );
 }
 
-export const query = graphql`
-  query {
-    novelchan: file(relativePath: { regex: "/novel-chan/" }) 
-    {
-        childImageSharp {
-            fluid (
-                quality: 100
-            ) {
-                ...GatsbyImageSharpFluid
-            }
-        }
+export const query = graphql`{
+  novelchan: file(relativePath: {regex: "/novel-chan/"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 100, layout: FULL_WIDTH)
     }
   }
+}
 `
 
 export default IndexPage
