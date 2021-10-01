@@ -3,10 +3,16 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Optimus Princeps";
-    src: url("../fonts/optimusprinceps-webfont.woff2");
+  font-family: "Optimus Princeps";
+  src: url("../fonts/optimusprinceps-webfont.woff2");
 }
 
 .navbar-elements:last-child {
-    margin-right: 0px !important;
+  margin-right: 0px !important;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 75%;
+  }
 }
