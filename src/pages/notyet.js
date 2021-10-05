@@ -1,15 +1,13 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import Layout from "../components/Layout";
 
 // styles
 const pageStyles = {
   display: "flex",
-  height: "100vh",
+  height: "90vh",
   justifyContent: "center",
   alignItems: "center",
-};
-
-const contentStyle = {
   textAlign: "center",
   color: "#fff",
 };
@@ -35,28 +33,30 @@ const linkStyles = {
 };
 
 // markup
-const NotFoundPage = () => {
+const NotYet = () => {
   return (
-    <main
-      style={pageStyles}
-      className="bg-gradient-to-b from-green-400 via-blue-500 to-indigo-600"
-    >
-      <title>Under construction page</title>
-      <div style={contentStyle}>
-        <h1 style={brandStyles}>Under Construction</h1>
-        <p style={messageStyles}>
-          Sorry{" "}
-          <span role="img" aria-label="Pensive emoji">
-            😔
-          </span>{" "}
-          This page is still under construction
-        </p>
-        <Link to="/" style={linkStyles}>
-          Go home
-        </Link>
-      </div>
-    </main>
+    <Layout>
+      <main
+        style={pageStyles}
+        className="bg-gradient-to-b from-green-400 via-blue-500 to-indigo-600"
+      >
+        <title>NovelRT | Under Construction</title>
+        <div>
+          <h1 style={brandStyles}>Under Construction</h1>
+          <p style={messageStyles}>
+            Sorry{" "}
+            <span role="img" aria-label="Pensive emoji">
+              😔
+            </span>{" "}
+            We'll bring you new content as soon as it's ready!
+          </p>
+          <Link to="/" style={linkStyles}>
+            Go Home
+          </Link>
+        </div>
+      </main>
+    </Layout>
   );
 };
 
-export default NotFoundPage;
+export default NotYet;
