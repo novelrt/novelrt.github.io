@@ -1,39 +1,54 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# NovelRT Web Page
 
-## 🚀 Quick start
+<img width="824" alt="novelrt-homepage" src="https://user-images.githubusercontent.com/13385801/135667926-64016c8b-63b0-4ee0-9c89-b972dff1de4a.png">
 
-1.  **Create a Gatsby site.**
+<br>&nbsp;<br>
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## 🚀 Test and Develop the Website Locally
+
+<br>&nbsp;<br>
+
+> Before you begin, you'll need Git and Node installed on your local computer. Check out the Gatsby [Setup Instructions](https://www.gatsbyjs.org/tutorial/part-zero/) for more information.
+
+> You'll also need to know how to run commands in a terminal. If you are using Visual Studio Code as your editor, you can use its integrated terminal for the following commands. Check out VS Code's [documentation](https://code.visualstudio.com/docs/editor/integrated-terminal) for more information
+
+<br>&nbsp;
+
+1.  **Clone this repo.**
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    # Clone the repo
+    git clone https://github.com/novelrt/novelrt.github.io
     ```
 
-2.  **Start developing.**
+2.  **Install.**
 
-    Navigate into your new site’s directory and start it up.
+    Navigate into your new site’s directory and install.
 
     ```shell
-    cd my-gatsby-site/
+    # Install Gatsby
+    cd novelrt.github.io
+    npm install
+    ```
+
+3.  **Start the Gatsby development server**
+
+    The server will run the site in the browser allowing you to see real-time changes to the code.
+
+    ```shell
+    # Run the Gatsby dev server
     npm run develop
     ```
 
-3.  **Open the code and start customizing!**
+4.  **Open the code and start editing and testing**
 
-    Your site is now running at http://localhost:8000!
+        The site is now running in the browser at http://localhost:8000
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+        Changes to files in the `src` folder will update in real-time as the files are edited and saved.
 
-4.  **Learn more**
+    <br>&nbsp;
+
+5.  **Learn more about Gatsby**
 
     - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
