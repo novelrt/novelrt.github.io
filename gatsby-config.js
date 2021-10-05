@@ -8,6 +8,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-transition-link",
     {
       resolve: "gatsby-source-filesystem",
       options: {

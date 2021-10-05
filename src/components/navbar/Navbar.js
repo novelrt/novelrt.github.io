@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavbarElement from "./NavbarElement";
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 class Navbar extends Component {
 
@@ -39,9 +40,9 @@ class Navbar extends Component {
 
         return (
             <nav className="flex justify-between flex-wrap py-5 px-10 md:px-12 lg:px-36 xl:px-46 2xl:px-64 bg-gray-700 text-gray-100">
-                <a href="/" className="font-logo text-4xl">
+                <AniLink to="/" className="font-logo text-4xl">
                     NovelRT
-                    </a>
+                </AniLink>
                 <div className="block md:hidden">
                     <button id="burger" onClick={this.handleClick}
                         className="flex items-center px-3 py-2 rounded-md bg-gray-100 text-gray-700 duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
