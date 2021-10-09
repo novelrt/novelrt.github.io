@@ -7,25 +7,7 @@ class Navbar extends Component {
         super();
         this.state = {
             menuOpened: false,
-            elements: [
-                {
-                    name: "Home",
-                    linksTo: "/"
-                },
-                {
-                    name: "Documentation",
-                    linksTo: "/docs"
-                },
-                {
-                    name: "News",
-                    linksTo: "/news"
-                },
-                {
-                    name: "Contribute",
-                    linksTo: "/contribute"
-                }
-            ]
-        }
+        };
     }
 
     handleClick = () => {
@@ -56,7 +38,7 @@ class Navbar extends Component {
                         <NavbarElement linksTo="/" name="Home" />
                         <NavbarElement linksTo="https://novelrt.github.io/NovelRT/" name="Documentation" />
                         <NavbarElement linksTo="/" name="News" />
-                        <NavbarElement linksTo="/" name="Contribute" />
+                        <NavbarElement linksTo="/contribute" name="Contribute" />
                     </ul>
                 </div>
             </nav>
