@@ -14,7 +14,7 @@ const ContributePage = () => {
                         NovelRT is under active development as we continue to enhance the 2D/Visual Novel development experience. With that said, here are a few ways you can contribute:
                     </h2>
                     <div id="features" className="flex flex-col gap-12 xl:grid xl:grid-cols-3 xl:gap-x-20 mt-20 mx-20 md:mx-28 xl:mx-36">
-                        <div className="flex flex-col items-center">
+                        <a href="#issue" className="flex flex-col items-center">
                             <div className="bg-gray-100 rounded-full py-2 px-2 w-16 h-16 xl:w-14 xl:h-14 shadow-lg">
                                 <div className="text-gray-800">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -23,16 +23,16 @@ const ContributePage = () => {
                                 </div>
                             </div>
                             <h3 className="mt-2 font-semibold text-center text-3xl xl:text-lg">Report an issue</h3>
-                        </div>
-                        <div className="flex flex-col items-center">
+                        </a>
+                        <a href="#pr" className="flex flex-col items-center">
                             <div className="bg-gray-100 rounded-full py-2 px-2 w-16 h-16 xl:w-14 xl:h-14 shadow-lg">
                                 <div className="text-gray-800 flex items-center justify-center h-full py-4">
                                     <svg className="w-10 h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Git Pull Request</title><circle cx="128" cy="416" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="42" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="42" d="M128 144v224M288 160l-64-64 64-64" /><circle cx="128" cy="96" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="42" /><circle cx="384" cy="416" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="42" /><path d="M240 96h84a60 60 0 0160 60v212" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="42" /></svg>
                                 </div>
                             </div>
                             <h3 className="mt-2 font-semibold text-center text-3xl xl:text-lg">Create a Pull Request</h3>
-                        </div>
-                        <div className="flex flex-col items-center">
+                        </a>
+                        <a href="#reach-out" className="flex flex-col items-center">
                             <div className="bg-gray-100 rounded-full py-2 px-2 w-16 h-16 xl:w-14 xl:h-14 shadow-lg">
                                 <div className="text-gray-800">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -41,7 +41,7 @@ const ContributePage = () => {
                                 </div>
                             </div>
                             <h3 className="mt-2 font-semibold text-center text-3xl xl:text-lg">Reach out to us</h3>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
