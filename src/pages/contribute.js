@@ -57,7 +57,7 @@ const ContributePage = () => {
                         <div>
                             <h3 className="mt-2 xl:mt-0 font-semibold xl:font-normal text-center xl:text-left text-3xl xl:text-4xl">Report an issue</h3>
                             <p className="mt-2 text-center xl:text-left">
-                                Running into a reproducible bug? Please feel free to <a className="underline hover:text-gray-500 duration-300" href="https://github.com/NovelRT/NovelRT/issues" target="_blank">open an issue on our GitHub repository</a>! We'd love to be able to resolve your problem.
+                                Running into a reproducible bug? Please feel free to <a className="underline hover:text-gray-500 duration-300" href="https://github.com/NovelRT/NovelRT/issues" target="_blank" rel="noreferrer">open an issue on our GitHub repository</a>! We'd love to be able to resolve your problem.
                             </p>
                         </div>
                     </div>
@@ -70,7 +70,7 @@ const ContributePage = () => {
                         <div>
                             <h3 className="mt-2 xl:mt-0 font-semibold xl:font-normal text-center xl:text-left text-3xl xl:text-4xl">Create a Pull Request</h3>
                             <p className="mt-2 text-center xl:text-left">
-                                Want to help out the NovelRT project? Thanks! We appreciate all the help we can get. To get started, <a className="underline hover:text-gray-500 duration-300" target="_blank" href="https://github.com/novelrt/NovelRT/labels/good%20first%20issue">simply have a look at our good first issues</a> and get involved!
+                                Want to help out the NovelRT project? Thanks! We appreciate all the help we can get. To get started, <a className="underline hover:text-gray-500 duration-300" target="_blank" rel="noreferrer" href="https://github.com/novelrt/NovelRT/labels/good%20first%20issue">simply have a look at our good first issues</a> and get involved!
                             </p>
                         </div>
                         <div className="hidden xl:block xl:mx-12">
@@ -92,7 +92,7 @@ const ContributePage = () => {
                         <div>
                             <h3 className="mt-2 xl:mt-0 font-semibold xl:font-normal text-center xl:text-left text-3xl xl:text-4xl">Reach out to us</h3>
                             <p className="mt-2 text-center xl:text-left">
-                                Feeling stuck? Don't know where to start? Have some questions? <a className="underline hover:text-gray-500 duration-300" target="_blank" href="https://discord.novelrt.dev/">Join our Discord server</a> where our contributors will happily help you.
+                                Feeling stuck? Don't know where to start? Have some questions? <a className="underline hover:text-gray-500 duration-300" target="_blank" rel="noreferrer" href="https://discord.novelrt.dev/">Join our Discord server</a> where our contributors will happily help you.
                             </p>
                         </div>
                     </div>
