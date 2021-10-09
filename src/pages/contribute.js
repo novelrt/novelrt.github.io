@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 
-const ContributePage = ({ data }) => {
+const ContributePage = () => {
     return (
         <main className="bg-gray-100 min-h-screen">
             <title>Contribute | NovelRT</title>
@@ -46,7 +46,7 @@ const ContributePage = ({ data }) => {
                 </div>
 
                 <div id="secondary-branding" className="flex flex-col gap-16 xl:gap-20 items-center py-28 md:px-12 lg:px-36 xl:px-46 2xl:px-64 mx-24 md:mx-36 xl:mx-64 text-gray-800">
-                    <div className="flex flex-col xl:flex-row items-center xl:flex xl:items-center">
+                    <div id="issue" className="flex flex-col xl:flex-row items-center xl:flex xl:items-center">
                         <div className="xl:mx-12">
                             <div className="bg-gradient-to-br text-gray-100 from-green-400 via-blue-500 to-pink-600 rounded-full py-3 px-3 xl:py-6 xl:px-6 w-16 h-16 xl:w-36 xl:h-36 shadow">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -61,7 +61,7 @@ const ContributePage = ({ data }) => {
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col xl:flex-row items-center xl:flex xl:items-center">
+                    <div id="pr" className="flex flex-col xl:flex-row items-center xl:flex xl:items-center">
                         <div className="xl:hidden">
                             <div className="bg-gradient-to-br text-gray-100 from-green-400 via-blue-500 to-pink-600 rounded-full py-3 px-3 w-16 h-16 shadow">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Git Pull Request</title><circle cx="128" cy="416" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M128 144v224M288 160l-64-64 64-64" /><circle cx="128" cy="96" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" /><circle cx="384" cy="416" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" /><path d="M240 96h84a60 60 0 0160 60v212" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" /></svg>
@@ -81,7 +81,7 @@ const ContributePage = ({ data }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col xl:flex-row items-center xl:flex xl:items-center">
+                    <div id="reach-out" className="flex flex-col xl:flex-row items-center xl:flex xl:items-center">
                         <div className="xl:mx-12">
                             <div className="bg-gradient-to-br text-gray-100 from-green-400 via-blue-500 to-pink-600 rounded-full py-3 px-3 xl:py-6 xl:px-6 w-16 h-16 xl:w-36 xl:h-36 shadow">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
