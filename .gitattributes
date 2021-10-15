@@ -1,2 +1,13 @@
-# Auto detect text files and perform LF normalization
-* text=lf
+###############################################################################
+# Set default behavior to:
+#   treat as text and
+#   normalize to Unix-style line endings
+###############################################################################
+*           text        eol=lf
+
+###############################################################################
+# Set explicit file behavior to:
+#   treat as binary
+###############################################################################
+*.png       binary
+*.ttf       binary
