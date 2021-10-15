@@ -1,54 +1,32 @@
-import * as React from "react"
-import { Link } from "gatsby"
-
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+import * as React from 'react';
+import Layout from '../components/Layout';
+import { graphql } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 // markup
-const NotFoundPage = () => {
+const IndexPage = ({ data }) => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
+    <main className='bg-gray-100 min-h-screen'>
+      <title>NovelRT</title>
+      <Layout>
+        <div id='main-branding' className='flex flex-col items-center py-12 md:px-12 lg:px-36 xl:px-46 2xl:px-64 bg-gradient-to-b from-green-400 via-blue-500 to-indigo-600'>
+          <GatsbyImage image={data.novelchan.childImageSharp.gatsbyImageData} className='w-64' alt="Novel-Chan: NovelRT's mascot!" />
+          <h1 className='my-4 text-5xl tracking-wide'>Page Not Found.</h1>
+          <h2 className='text-lg mx-16 xl:w-1/2 text-center'>Oops! The page you are looking for does not exist.</h2>
+        </div>
+      </Layout>
     </main>
-  )
-}
+  );
+};
 
-export default NotFoundPage
+export const query = graphql`
+  {
+    novelchan: file(relativePath: { regex: "/novel-chan/" }) {
+      childImageSharp {
+        gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+      }
+    }
+  }
+`;
+
+export default IndexPage;

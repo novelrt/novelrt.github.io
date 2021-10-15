@@ -1,62 +1,32 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import Layout from "../components/Layout";
-
-// styles
-const pageStyles = {
-  display: "flex",
-  height: "90vh",
-  justifyContent: "center",
-  alignItems: "center",
-  textAlign: "center",
-  color: "#fff",
-};
-
-const brandStyles = {
-  fontSize: "4rem",
-  fontWeight: "700",
-};
-
-const messageStyles = {
-  fontSize: "1.8rem",
-};
-
-const linkStyles = {
-  marginTop: "2rem",
-  display: "inline-block",
-  padding: ".8rem 4rem",
-  textAlign: "center",
-  background: "#374151",
-  borderRadius: "5rem",
-  fontSize: "1.4rem",
-  filter: "drop-shadow(0 0 10px #374151)",
-};
+import * as React from 'react';
+import Layout from '../components/Layout';
+import { graphql } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 // markup
-const NotYet = () => {
+const IndexPage = ({ data }) => {
   return (
-    <Layout>
-      <main
-        style={pageStyles}
-        className="bg-gradient-to-b from-green-400 via-blue-500 to-indigo-600"
-      >
-        <title>NovelRT | Under Construction</title>
-        <div>
-          <h1 style={brandStyles}>Under Construction</h1>
-          <p style={messageStyles}>
-            Sorry{" "}
-            <span role="img" aria-label="Pensive emoji">
-              😔
-            </span>{" "}
-            We'll bring you new content as soon as it's ready!
-          </p>
-          <Link to="/" style={linkStyles}>
-            Go Home
-          </Link>
+    <main className='bg-gray-100 min-h-screen'>
+      <title>NovelRT</title>
+      <Layout>
+        <div id='main-branding' className='flex flex-col items-center py-12 md:px-12 lg:px-36 xl:px-46 2xl:px-64 bg-gradient-to-b from-green-400 via-blue-500 to-indigo-600'>
+          <GatsbyImage image={data.novelchan.childImageSharp.gatsbyImageData} className='w-64' alt="Novel-Chan: NovelRT's mascot!" />
+          <h1 className='my-4 text-5xl tracking-wide'>Under Construction.</h1>
+          <h2 className='text-lg mx-16 xl:w-1/2 text-center'>Thank you for your patience as we continue working on this page.</h2>
         </div>
-      </main>
-    </Layout>
+      </Layout>
+    </main>
   );
 };
 
-export default NotYet;
+export const query = graphql`
+  {
+    novelchan: file(relativePath: { regex: "/novel-chan/" }) {
+      childImageSharp {
+        gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+      }
+    }
+  }
+`;
+
+export default IndexPage;
