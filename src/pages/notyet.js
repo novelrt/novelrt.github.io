@@ -48,7 +48,7 @@ const NotYet = () => {
             <span role="img" aria-label="Pensive emoji">
               😔
             </span>{" "}
-            We'll bring you new content as soon as it's ready!
+            We&apos;ll bring you new content as soon as it&apos;s ready!
           </p>
           <Link to="/" style={linkStyles}>
             Go Home
