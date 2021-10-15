@@ -7,7 +7,7 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 const IndexPage = ({ data }) => {
   return (
     <main className='bg-gray-100 min-h-screen'>
-      <title>NovelRT</title>
+      <title>Page Not Found | NovelRT</title>
       <Layout>
         <div id='main-branding' className='flex flex-col items-center py-12 md:px-12 lg:px-36 xl:px-46 2xl:px-64 bg-gradient-to-b from-green-400 via-blue-500 to-indigo-600'>
           <GatsbyImage image={data.novelchan.childImageSharp.gatsbyImageData} className='w-64' alt="Novel-Chan: NovelRT's mascot!" />
