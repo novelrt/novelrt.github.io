@@ -15,6 +15,6 @@
     "rules": {
         "react/prefer-stateless-function": "off",
         "react/prop-types": "off",
-        "react/destructuring-assignment": "never"
+        "react/destructuring-assignment": "off"
     }
 }
