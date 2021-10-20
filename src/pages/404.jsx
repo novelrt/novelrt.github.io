@@ -1,10 +1,9 @@
 import * as React from "react";
-import { graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import Logo from "../components/Logo";
 import Layout from "../components/Layout";
 
 // markup
-const IndexPage = ({ data }) => (
+const NotFoundPage = () => (
     <main className="bg-gray-100 min-h-screen">
         <title>Page Not Found | NovelRT</title>
         <Layout>
@@ -12,11 +11,7 @@ const IndexPage = ({ data }) => (
                 id="main-branding"
                 className="flex flex-col items-center py-12 md:px-12 lg:px-36 xl:px-46 2xl:px-64 bg-gradient-to-b from-green-400 via-blue-500 to-indigo-600"
             >
-                <GatsbyImage
-                    image={data.novelchan.childImageSharp.gatsbyImageData}
-                    className="w-64"
-                    alt="Novel-Chan: NovelRT's mascot!"
-                />
+                <Logo />
                 <h1 className="my-4 text-5xl tracking-wide">Page Not Found.</h1>
                 <h2 className="text-lg mx-16 xl:w-1/2 text-center">
                     Oops! The page you are looking for does not exist.
@@ -26,14 +21,4 @@ const IndexPage = ({ data }) => (
     </main>
 );
 
-export const query = graphql`
-    {
-        novelchan: file(relativePath: { regex: "/novel-chan/" }) {
-            childImageSharp {
-                gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-            }
-        }
-    }
-`;
-
-export default IndexPage;
+export default NotFoundPage;
