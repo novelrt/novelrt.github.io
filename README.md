@@ -1,6 +1,8 @@
 # NovelRT Web Page
 
-<img width="824" alt="novelrt-homepage" src="https://user-images.githubusercontent.com/13385801/135667926-64016c8b-63b0-4ee0-9c89-b972dff1de4a.png">
+<img width="395" alt="NovelRT Mascot" src="https://user-images.githubusercontent.com/13385801/138133079-818de9cf-6682-4e54-93c6-ca33f8223b04.png">
+
+
 
 <br>&nbsp;<br>
 
