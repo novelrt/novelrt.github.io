@@ -121,8 +121,8 @@ const IndexPage = ({ data }) => (
                 id="secondary-branding"
                 className="flex flex-col gap-16 xl:gap-20 items-center py-28 md:px-12 lg:px-36 xl:px-46 2xl:px-64 mx-24 md:mx-36 xl:mx-64 text-gray-800"
             >
-                <div className="flex flex-col xl:flex-row items-center xl:flex xl:items-center">
-                    <div className="xl:mx-12">
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-1 place-items-center">
+                    <div className="xl:mx-12  justify-self-center">
                         <div className="bg-gradient-to-br text-gray-100 from-green-400 via-blue-500 to-pink-600 rounded-full py-3 px-3 xl:py-6 xl:px-6 w-16 h-16 xl:w-36 xl:h-36 shadow">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -152,37 +152,8 @@ const IndexPage = ({ data }) => (
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-col xl:flex-row items-center xl:flex xl:items-center">
-                    <div className="xl:hidden">
-                        <div className="bg-gradient-to-br text-gray-100 from-green-400 via-blue-500 to-pink-600 rounded-full py-3 px-3 w-16 h-16 shadow">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={1.25}
-                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                                />
-                            </svg>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 className="mt-2 xl:mt-0 font-semibold xl:font-normal text-center xl:text-left text-3xl xl:text-4xl">
-                            Write narratives. Not boilerplate.
-                        </h3>
-                        <p className="mt-2 text-center xl:text-left">
-                            Tired of writing tools and burning out before you
-                            can actually write your visual novel script? Do you
-                            want a tool that has it integrated as part of the
-                            platform? NovelRT is built to support your inner
-                            playwright from the get go!
-                        </p>
-                    </div>
-                    <div className="hidden xl:block xl:mx-12">
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-1 place-items-center">
+                    <div className="xl:mx-12 justify-self-center xl:col-start-2 xl:col-end-3 xl:row-start-1">
                         <div className="bg-gradient-to-br text-gray-100 from-green-400 via-blue-500 to-pink-600 rounded-full py-3 px-3 xl:py-6 xl:px-6 w-16 h-16 xl:w-36 xl:h-36 shadow">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -198,6 +169,18 @@ const IndexPage = ({ data }) => (
                                 />
                             </svg>
                         </div>
+                    </div>
+                    <div className="xl:col-start-1 xl:col-end-2  xl:row-start-1">
+                        <h3 className="mt-2 xl:mt-0 font-semibold xl:font-normal text-center xl:text-left text-3xl xl:text-4xl">
+                            Write narratives. Not boilerplate.
+                        </h3>
+                        <p className="mt-2 text-center xl:text-left">
+                            Tired of writing tools and burning out before you
+                            can actually write your visual novel script? Do you
+                            want a tool that has it integrated as part of the
+                            platform? NovelRT is built to support your inner
+                            playwright from the get go!
+                        </p>
                     </div>
                 </div>
             </div>
