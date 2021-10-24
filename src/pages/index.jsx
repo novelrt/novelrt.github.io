@@ -112,14 +112,4 @@ const IndexPage = () => (
     </main>
 );
 
-export const query = graphql`
-    {
-        novelchan: file(relativePath: { regex: "/novel-chan/" }) {
-            childImageSharp {
-                gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-            }
-        }
-    }
-`;
-
 export default IndexPage;
