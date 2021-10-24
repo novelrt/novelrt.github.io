@@ -10,7 +10,7 @@ class NavbarElement extends Component {
                     direction="left"
                     id={this.props.name}
                     to={this.props.linksTo}
-                    className="text-lg md:text-2xl hover:text-gray-400 duration-300"
+                    className="text-lg outline-none md:text-2xl hover:text-gray-400 duration-300"
                 >
                     {this.props.name}
                 </AniLink>
