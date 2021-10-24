@@ -1,5 +1,8 @@
 import * as React from "react";
+import { ExclamationCircleIcon, ChatIcon } from "@heroicons/react/outline";
+import PullRequestIcon from "../components/icons/PullRequestIcon";
 import Layout from "../components/Layout";
+import Feature from "../components/Feature";
 
 const ContributePage = () => (
     <main className="bg-gray-100 min-h-screen">
@@ -21,112 +24,15 @@ const ContributePage = () => (
                     id="features"
                     className="flex flex-col gap-12 xl:grid xl:grid-cols-3 xl:gap-x-20 mt-20 mx-20 md:mx-28 xl:mx-36"
                 >
-                    <a href="#issue" className="flex flex-col items-center">
-                        <div className="bg-gray-100 rounded-full py-2 px-2 w-16 h-16 xl:w-14 xl:h-14 shadow-lg">
-                            <div className="text-gray-800">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                                    />
-                                </svg>
-                            </div>
-                        </div>
-                        <h3 className="mt-2 font-semibold text-center text-3xl xl:text-lg">
-                            Report an issue
-                        </h3>
-                    </a>
-                    <a href="#pr" className="flex flex-col items-center">
-                        <div className="bg-gray-100 rounded-full py-2 px-2 w-16 h-16 xl:w-14 xl:h-14 shadow-lg">
-                            <div className="text-gray-800 flex items-center justify-center h-full py-4">
-                                <svg
-                                    className="w-10 h-9"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512"
-                                >
-                                    <title>Git Pull Request</title>
-                                    <circle
-                                        cx="128"
-                                        cy="416"
-                                        r="48"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="42"
-                                    />
-                                    <path
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="42"
-                                        d="M128 144v224M288 160l-64-64 64-64"
-                                    />
-                                    <circle
-                                        cx="128"
-                                        cy="96"
-                                        r="48"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="42"
-                                    />
-                                    <circle
-                                        cx="384"
-                                        cy="416"
-                                        r="48"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="42"
-                                    />
-                                    <path
-                                        d="M240 96h84a60 60 0 0160 60v212"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="42"
-                                    />
-                                </svg>
-                            </div>
-                        </div>
-                        <h3 className="mt-2 font-semibold text-center text-3xl xl:text-lg">
-                            Create a Pull Request
-                        </h3>
-                    </a>
-                    <a href="#reach-out" className="flex flex-col items-center">
-                        <div className="bg-gray-100 rounded-full py-2 px-2 w-16 h-16 xl:w-14 xl:h-14 shadow-lg">
-                            <div className="text-gray-800">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                                    />
-                                </svg>
-                            </div>
-                        </div>
-                        <h3 className="mt-2 font-semibold text-center text-3xl xl:text-lg">
-                            Reach out to us
-                        </h3>
-                    </a>
+                    <Feature featureName="Report an issue" linksTo="#issue">
+                        <ExclamationCircleIcon />
+                    </Feature>
+                    <Feature featureName="Create a Pull Request" linksTo="#pr">
+                        <PullRequestIcon />
+                    </Feature>
+                    <Feature featureName="Reach out to us" linksTo="#reach-out">
+                        <ChatIcon />
+                    </Feature>
                 </div>
             </div>
 

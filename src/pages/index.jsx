@@ -1,8 +1,13 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { DesktopComputerIcon } from "@heroicons/react/outline";
+import {
+    DesktopComputerIcon,
+    CodeIcon,
+    CubeTransparentIcon,
+} from "@heroicons/react/outline";
 import Layout from "../components/Layout";
+import Feature from "../components/Feature";
 
 // markup
 const IndexPage = ({ data }) => (
@@ -28,80 +33,24 @@ const IndexPage = ({ data }) => (
                     id="features"
                     className="flex flex-col gap-12 xl:grid xl:grid-cols-3 xl:gap-x-20 mt-20 mx-20 md:mx-28 xl:mx-36"
                 >
-                    <div className="flex flex-col items-center">
-                        <div className="bg-gray-100 text-gray-800 rounded-full py-2 px-2 w-16 h-16 xl:w-14 xl:h-14 shadow-lg">
-                            <DesktopComputerIcon />
-                        </div>
-                        <h3 className="mt-2 font-semibold text-center text-3xl xl:text-lg">
-                            Cross-Platform
-                        </h3>
-                        <p className="mt-2 text-center text-lg xl:text-sm">
-                            We make an active effort to bring NovelRT to as many
-                            platforms as we can, so you can focus on building
-                            your games. Right now we support Windows and Linux,
-                            with Web, MacOS, iOS and Android being actively
-                            developed!
-                        </p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <div className="bg-gray-100 rounded-full py-2 px-2 w-16 h-16 xl:w-14 xl:h-14 shadow-lg">
-                            <div className="text-gray-800">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                                    />
-                                </svg>
-                            </div>
-                        </div>
-                        <h3 className="mt-2 font-semibold text-center text-3xl xl:text-lg">
-                            Use what you love
-                        </h3>
-                        <p className="mt-2 text-center text-lg xl:text-sm">
-                            C#, Ink, Lua, MoonScript or C++? The core of NovelRT
-                            is written in C++ to give you the performance you
-                            need, but we provide in-depth bindings for powerful
-                            ecosystems like .NET. You can&apos;t find you
-                            favorite language? Just contribute language bindings
-                            yourself!
-                        </p>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <div className="bg-gray-100 rounded-full py-2 px-2 w-16 h-16 xl:w-14 xl:h-14 shadow-lg">
-                            <div className="text-gray-800">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
-                                    />
-                                </svg>
-                            </div>
-                        </div>
-                        <h3 className="mt-2 font-semibold text-center text-3xl xl:text-lg">
-                            Built for modularity
-                        </h3>
-                        <p className="mt-2 text-center text-lg xl:text-sm">
-                            NovelRT features a well-crafted multi-threaded
-                            Entity Component System and promotes Data Oriented
-                            Design so that your codebase scales with your
-                            project. Batched rendering and high code reusability
-                            are a core focus for us.
-                        </p>
-                    </div>
+                    <Feature
+                        featureName="Cross-Platform"
+                        featureDescription="We make an active effort to bring NovelRT to as many platforms as we can, so you can focus on building your games. Right now we support Windows and Linux, with Web, MacOS, iOS and Android being actively developed!"
+                    >
+                        <DesktopComputerIcon />
+                    </Feature>
+                    <Feature
+                        featureName="Use what you love"
+                        featureDescription="C#, Ink, Lua, MoonScript or C++? The core of NovelRT is written in C++ to give you the performance you need, but we provide in-depth bindings for powerful ecosystems like .NET. You can't find you favorite language? Just contribute language bindings yourself!"
+                    >
+                        <CodeIcon />
+                    </Feature>
+                    <Feature
+                        featureName="Built for modularity"
+                        featureDescription="NovelRT features a well-crafted multi-threaded Entity Component System and promotes Data Oriented Design so that your codebase scales with your project. Batched rendering and high code reusability are a core focus for us."
+                    >
+                        <CubeTransparentIcon />
+                    </Feature>
                 </div>
             </div>
             <div
