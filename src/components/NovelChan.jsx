@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
-const Logo = () => (
+const NovelChan = () => (
     <StaticImage
         src="../images/novel-chan.png"
         className="w-64"
@@ -13,4 +13,4 @@ const Logo = () => (
     />
 );
 
-export default Logo;
+export default NovelChan;
