@@ -3,27 +3,18 @@ import { ExclamationCircleIcon, ChatIcon } from "@heroicons/react/outline";
 import PullRequestIcon from "../components/icons/PullRequestIcon";
 import Layout from "../components/Layout";
 import Feature from "../components/Feature";
+import FeaturesRow from "../components/FeaturesRow";
+import Hero from "../components/Hero";
 
 const ContributePage = () => (
     <main className="bg-gray-100 min-h-screen">
         <title>Contribute | NovelRT</title>
         <Layout>
-            <div
-                id="main-branding"
-                className="flex flex-col items-center py-12 md:px-12 lg:px-36 xl:px-46 2xl:px-64 bg-gradient-to-b from-green-400 via-blue-500 to-indigo-600"
+            <Hero
+                title="How to contribute."
+                description="NovelRT is under active development as we continue to enhance the 2D/Visual Novel development experience. With that said, here are a few ways you can contribute:"
             >
-                <h1 className="my-4 text-5xl tracking-wide text-center">
-                    How to contribute.
-                </h1>
-                <h2 className="text-lg mx-16 xl:w-1/2 text-center">
-                    NovelRT is under active development as we continue to
-                    enhance the 2D/Visual Novel development experience. With
-                    that said, here are a few ways you can contribute:
-                </h2>
-                <div
-                    id="features"
-                    className="flex flex-col gap-12 xl:grid xl:grid-cols-3 xl:gap-x-20 mt-20 mx-20 md:mx-28 xl:mx-36"
-                >
+                <FeaturesRow>
                     <Feature featureName="Report an issue" linksTo="#issue">
                         <ExclamationCircleIcon />
                     </Feature>
@@ -33,8 +24,8 @@ const ContributePage = () => (
                     <Feature featureName="Reach out to us" linksTo="#reach-out">
                         <ChatIcon />
                     </Feature>
-                </div>
-            </div>
+                </FeaturesRow>
+            </Hero>
 
             <div
                 id="secondary-branding"
@@ -85,59 +76,7 @@ const ContributePage = () => (
                 >
                     <div className="xl:hidden">
                         <div className="bg-gradient-to-br text-gray-100 from-green-400 via-blue-500 to-pink-600 rounded-full py-3 px-3 w-16 h-16 shadow">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="ionicon"
-                                viewBox="0 0 512 512"
-                            >
-                                <title>Git Pull Request</title>
-                                <circle
-                                    cx="128"
-                                    cy="416"
-                                    r="48"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="32"
-                                />
-                                <path
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="32"
-                                    d="M128 144v224M288 160l-64-64 64-64"
-                                />
-                                <circle
-                                    cx="128"
-                                    cy="96"
-                                    r="48"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="32"
-                                />
-                                <circle
-                                    cx="384"
-                                    cy="416"
-                                    r="48"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="32"
-                                />
-                                <path
-                                    d="M240 96h84a60 60 0 0160 60v212"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="32"
-                                />
-                            </svg>
+                            <PullRequestIcon />
                         </div>
                     </div>
                     <div>

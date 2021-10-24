@@ -1,38 +1,26 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
 import {
     DesktopComputerIcon,
     CodeIcon,
     CubeTransparentIcon,
 } from "@heroicons/react/outline";
 import Layout from "../components/Layout";
+import NovelChan from "../components/NovelChan";
+import Hero from "../components/Hero";
 import Feature from "../components/Feature";
+import FeaturesRow from "../components/FeaturesRow";
 
-// markup
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
     <main className="bg-gray-100 min-h-screen">
         <title>NovelRT</title>
         <Layout>
-            <div
-                id="main-branding"
-                className="flex flex-col items-center py-12 md:px-12 lg:px-36 xl:px-46 2xl:px-64 bg-gradient-to-b from-green-400 via-blue-500 to-indigo-600"
+            <Hero
+                image={<NovelChan />}
+                title="Meet NovelRT."
+                description="NovelRT is a low-ceremony multi-platform open source game engine with a strong focus on 2D Game Development and first-class support for Novel Game Development."
             >
-                <GatsbyImage
-                    image={data.novelchan.childImageSharp.gatsbyImageData}
-                    className="w-64"
-                    alt="Novel-Chan: NovelRT's mascot!"
-                />
-                <h1 className="my-4 text-5xl tracking-wide">Meet NovelRT.</h1>
-                <h2 className="text-lg mx-16 xl:w-1/2 text-center">
-                    NovelRT is a low-ceremony multi-platform open source game
-                    engine with a strong focus on 2D Game Development and
-                    first-class support for Novel Game Development.
-                </h2>
-                <div
-                    id="features"
-                    className="flex flex-col gap-12 xl:grid xl:grid-cols-3 xl:gap-x-20 mt-20 mx-20 md:mx-28 xl:mx-36"
-                >
+                <FeaturesRow>
                     <Feature
                         featureName="Cross-Platform"
                         featureDescription="We make an active effort to bring NovelRT to as many platforms as we can, so you can focus on building your games. Right now we support Windows and Linux, with Web, MacOS, iOS and Android being actively developed!"
@@ -51,8 +39,8 @@ const IndexPage = ({ data }) => (
                     >
                         <CubeTransparentIcon />
                     </Feature>
-                </div>
-            </div>
+                </FeaturesRow>
+            </Hero>
             <div
                 id="secondary-branding"
                 className="flex flex-col gap-16 xl:gap-20 items-center py-28 md:px-12 lg:px-36 xl:px-46 2xl:px-64 mx-24 md:mx-36 xl:mx-64 text-gray-800"
