@@ -8,7 +8,7 @@ const NovelChan = () => (
         loading="eager"
         placeholder="none"
         fadeIn={false}
-        durationFadeIn={0}
+        durationfadein={0}
         alt="Novel-Chan: NovelRT's mascot!"
     />
 );
