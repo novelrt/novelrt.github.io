@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const prIcon = () => (
+const PrIcon = () => (
     <svg
         className="w-10 h-9"
         xmlns="http://www.w3.org/2000/svg"
@@ -56,4 +56,4 @@ const prIcon = () => (
     </svg>
 );
 
-export default prIcon;
+export default PrIcon;

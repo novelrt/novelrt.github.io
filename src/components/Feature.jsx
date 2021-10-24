@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const feature = ({ children, featureName, featureDescription, linksTo }) => {
+const Feature = ({ children, featureName, featureDescription, linksTo }) => {
     const content = (
         <>
             <div className="bg-gray-100 text-gray-800 rounded-full py-2 px-2 w-16 h-16 xl:w-14 xl:h-14 shadow-lg">
@@ -28,4 +28,4 @@ const feature = ({ children, featureName, featureDescription, linksTo }) => {
     );
 };
 
-export default feature;
+export default Feature;
