@@ -1,6 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { DesktopComputerIcon } from "@heroicons/react/outline";
 import Layout from "../components/Layout";
 
 // markup
@@ -28,22 +29,8 @@ const IndexPage = ({ data }) => (
                     className="flex flex-col gap-12 xl:grid xl:grid-cols-3 xl:gap-x-20 mt-20 mx-20 md:mx-28 xl:mx-36"
                 >
                     <div className="flex flex-col items-center">
-                        <div className="bg-gray-100 rounded-full py-2 px-2 w-16 h-16 xl:w-14 xl:h-14 shadow-lg">
-                            <div className="text-gray-800">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                    />
-                                </svg>
-                            </div>
+                        <div className="bg-gray-100 text-gray-800 rounded-full py-2 px-2 w-16 h-16 xl:w-14 xl:h-14 shadow-lg">
+                            <DesktopComputerIcon />
                         </div>
                         <h3 className="mt-2 font-semibold text-center text-3xl xl:text-lg">
                             Cross-Platform
