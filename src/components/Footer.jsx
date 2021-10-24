@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import DiscordIcon from "./icons/DiscordIcon";
 import GitHubIcon from "./icons/GithubIcon";
 
