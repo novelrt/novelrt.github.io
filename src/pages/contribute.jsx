@@ -85,21 +85,21 @@ const ContributePage = () => {
                     description="NovelRT is under active development as we continue to enhance the 2D/Visual Novel development experience. With that said, here are a few ways you can contribute:"
                 >
                     <FeaturesRow>
-                        <Feature featureName="Report an issue" linksTo="#issue">
-                            <ExclamationCircleIcon />
-                        </Feature>
                         <Feature
+                            featureIcon={<ExclamationCircleIcon />}
+                            featureName="Report an issue"
+                            linksTo="#issue"
+                        />
+                        <Feature
+                            featureIcon={<PullRequestIcon />}
                             featureName="Create a Pull Request"
                             linksTo="#pr"
-                        >
-                            <PullRequestIcon />
-                        </Feature>
+                        />
                         <Feature
+                            featureIcon={<ChatIcon />}
                             featureName="Reach out to us"
                             linksTo="#reach-out"
-                        >
-                            <ChatIcon />
-                        </Feature>
+                        />
                     </FeaturesRow>
                 </Hero>
 

@@ -44,23 +44,20 @@ const IndexPage = () => {
                 >
                     <FeaturesRow>
                         <Feature
+                            featureIcon={<DesktopComputerIcon />}
                             featureName="Cross-Platform"
                             featureDescription="We make an active effort to bring NovelRT to as many platforms as we can, so you can focus on building your games. Right now we support Windows and Linux, with Web, MacOS, iOS and Android being actively developed!"
-                        >
-                            <DesktopComputerIcon />
-                        </Feature>
+                        />
                         <Feature
+                            featureIcon={<CodeIcon />}
                             featureName="Use what you love"
                             featureDescription="C#, Ink, Lua, MoonScript or C++? The core of NovelRT is written in C++ to give you the performance you need, but we provide in-depth bindings for powerful ecosystems like .NET. You can't find you favorite language? Just contribute language bindings yourself!"
-                        >
-                            <CodeIcon />
-                        </Feature>
+                        />
                         <Feature
+                            featureIcon={<CubeTransparentIcon />}
                             featureName="Built for modularity"
                             featureDescription="NovelRT features a well-crafted multi-threaded Entity Component System and promotes Data Oriented Design so that your codebase scales with your project. Batched rendering and high code reusability are a core focus for us."
-                        >
-                            <CubeTransparentIcon />
-                        </Feature>
+                        />
                     </FeaturesRow>
                 </Hero>
 
