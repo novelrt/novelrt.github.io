@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import NovelChan from "../components/NovelChan";
 
-const IndexPage = () => (
+const Error404Page = () => (
     <main className="bg-gray-100 min-h-screen">
         <title>Page Not Found | NovelRT</title>
         <Layout>
@@ -16,4 +16,4 @@ const IndexPage = () => (
     </main>
 );
 
-export default IndexPage;
+export default Error404Page;

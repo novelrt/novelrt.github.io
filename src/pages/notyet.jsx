@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import NovelChan from "../components/NovelChan";
 
-const IndexPage = () => (
+const NotYetPage = () => (
     <main className="bg-gray-100 min-h-screen">
         <title>Under Construction | NovelRT</title>
         <Layout>
@@ -16,4 +16,4 @@ const IndexPage = () => (
     </main>
 );
 
-export default IndexPage;
+export default NotYetPage;
