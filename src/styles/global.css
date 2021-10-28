@@ -10,9 +10,3 @@
 .navbar-elements:last-child {
     margin-right: 0px !important;
 }
-
-@media screen and (max-width: 600px) {
-    html {
-        font-size: 75%;
-    }
-}
