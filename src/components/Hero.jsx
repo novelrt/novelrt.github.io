@@ -14,7 +14,7 @@ const Hero = ({ children, image, title, description }) => (
         >
             {title}
         </h1>
-        <h2 className="text-lg mx-16 xl:w-1/2 text-center">{description}</h2>
+        <h2 className="text-lg px-4 my-6 max-w-prose my-6 xl:w-1/2 ">{description}</h2>
 
         {children}
     </div>

@@ -1,7 +1,7 @@
 import * as React from "react";
 
 const DetailedFeatures = ({ features }) => (
-    <ul className="flex flex-col gap-16 xl:gap-20 items-center py-28 md:px-12 lg:px-36 xl:px-46 2xl:px-64 mx-24 md:mx-36 xl:mx-64 text-gray-800">
+    <ul className="flex flex-col gap-16 xl:gap-20 items-center py-28 px-4  max-w-prose m-auto text-gray-800">
         {features.map((f, i) => {
             const innerClasses =
                 i % 2 === 0
@@ -23,7 +23,7 @@ const DetailedFeatures = ({ features }) => (
                         <h3 className="mt-2 xl:mt-0 font-semibold xl:font-normal text-center xl:text-left text-3xl xl:text-4xl">
                             {f.title}
                         </h3>
-                        <p className="mt-2 text-center xl:text-left">
+                        <p className="mt-2 max-w-prose xl:text-left">
                             {f.content}
                         </p>
                     </div>
