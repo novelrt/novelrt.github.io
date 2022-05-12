@@ -10,14 +10,14 @@ const Feature = ({ featureIcon, featureName, featureDescription, linksTo }) => {
                 {featureName}
             </h3>
             {featureDescription && (
-                <p className="mt-2 max-w-prose text-lg xl:text-sm">
+                <p className="mt-2 max-w-prose text-lg xl:text-sm flex-1">
                     {featureDescription}
                 </p>
             )}
         </>
     );
 
-    const wrapperClasses = "flex flex-col items-center max-w-prose m-auto";
+    const wrapperClasses = "flex flex-col items-center max-w-prose m-auto h-full";
 
     return linksTo ? (
         <a href={linksTo} className={wrapperClasses}>
