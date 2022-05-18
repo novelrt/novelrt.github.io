@@ -9,7 +9,7 @@ const Footer = () => (
                 <a href="/" className="font-logo text-3xl">
                     NovelRT
                 </a>
-                <p className="text-gray-400 w-88">
+                <p className="text-gray-400 max-w-prose">
                     A cross-platform 2D game engine accompanied by a strong
                     toolset for visual novels.
                 </p>
