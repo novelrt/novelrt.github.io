@@ -4,16 +4,17 @@ import { ExclamationCircleIcon, ChatIcon } from "@heroicons/react/outline";
 import PullRequestIcon, {
     PrIconThin,
 } from "../components/icons/PullRequestIcon";
+import GitHubIcon from "../components/icons/GithubIcon";
 import Layout from "../components/Layout";
 import Feature from "../components/Feature";
 import FeaturesRow from "../components/FeaturesRow";
 import Hero from "../components/Hero";
-import DetailedContributors from "../components/DetailedContributors";
 import {
     ChatIconThin,
     ExclamationCircleIconThin,
 } from "../components/icons/HeroiconsThinOutlineIcons";
 import DetailedFeatures from "../components/DetailedFeatures";
+import DetailedContributors from "../components/DetailedContributors";
 
 const ContributePage = () => {
 
@@ -105,12 +106,17 @@ const ContributePage = () => {
                             featureName="Reach out to us"
                             linksTo="#reach-out"
                         />
+                                                <Feature
+                            featureIcon={<GitHubIcon />}
+                            featureName="Meet our contributors"
+                            linksTo="#contributors"
+                        />
                     </FeaturesRow>
                 </Hero>
 
                 <DetailedFeatures features={detailedFeatures} />
 
-                <div className="grid grid-cols-1 gap-5">
+                <div id="contributors" className="grid grid-cols-1 gap-5">
                     <h2 className="font-bold text-gray-800 text-center text-4xl mt-2 mb-2 ">Meet Our Contributors</h2>
                     <DetailedContributors />
                 </div>
