@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from 'react';
 
 import { ExclamationCircleIcon, ChatIcon } from "@heroicons/react/outline";
 import PullRequestIcon, {
@@ -17,39 +17,6 @@ import DetailedFeatures from "../components/DetailedFeatures";
 
 const ContributePage = () => {
 
-    // Client-side Runtime Data Fetching
-    const [ghData, setGhData] = useState(0)
-    useEffect(() => {
-        // get data from GitHub api
-        // https://novelrt-functions.azurewebsites.net/api/novelrtcontributors
-        // https://api.github.com/repos/novelrt/NovelRT/contributors
-        fetch(`https://novelrt-functions.azurewebsites.net/api/novelrtcontributors`)
-            .then(response =>
-                // console.log(response)
-                response.json()
-            ) // parse JSON from request
-            .then(resultData => {
-                setGhData(resultData)
-
-            }) // set data for the number of stars
-    }, [])
-
-
-
-    if (ghData === 0) {
-        return (
-            <main className="bg-gray-100 min-h-screen">
-                <title>Contribute | NovelRT</title>
-                <Layout>
-                    <h1 className="font-bold text-gray-800 text-center text-4xl mt-2 mb-2 ">Loading...</h1>
-                </Layout>
-
-            </main>
-        )
-    }
-
-    const dataArray = [...ghData.data]
-    dataArray.sort((a, b) => (b.contributions > a.contributions) ? 1 : -1)
 
     // detailed features
     const detailedFeatures = [
@@ -145,7 +112,7 @@ const ContributePage = () => {
 
                 <div className="grid grid-cols-1 gap-5">
                     <h2 className="font-bold text-gray-800 text-center text-4xl mt-2 mb-2 ">Meet Our Contributors</h2>
-                    <DetailedContributors contributors={dataArray} />
+                    <DetailedContributors />
                 </div>
             </Layout>
         </main>
