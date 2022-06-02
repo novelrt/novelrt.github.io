@@ -14,7 +14,7 @@ import {
     ExclamationCircleIconThin,
 } from "../components/icons/HeroiconsThinOutlineIcons";
 import DetailedFeatures from "../components/DetailedFeatures";
-import DetailedContributors from "../components/DetailedContributors";
+import DetailedRepos from "../components/DetailedRepos";
 
 const ContributePage = () => {
 
@@ -117,8 +117,8 @@ const ContributePage = () => {
                 <DetailedFeatures features={detailedFeatures} />
 
                 <div id="contributors" className="grid grid-cols-1 gap-5">
-                    <h2 className="font-bold text-gray-800 text-center text-4xl mt-2 mb-2 ">Meet Our Contributors</h2>
-                    <DetailedContributors />
+                    <h2 className="text-gray-800 text-center text-5xl mt-2 mb-2 ">Meet Our Contributors</h2>
+                    <DetailedRepos />
                 </div>
             </Layout>
         </main>

@@ -1,70 +1,39 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 
-const DetailedContributors = () => {
-    // Client-side Runtime Data Fetching
-    const [ghData, setGhData] = useState(0)
-    useEffect(() => {
-        // get data from GitHub api
-        // https://novelrt-functions.azurewebsites.net/api/novelrtcontributors
-        // https://api.github.com/repos/novelrt/NovelRT/contributors
-        fetch(`https://novelrt-functions.azurewebsites.net/api/novelrtcontributors`)
-            .then(response =>
-                // console.log(response)
-                response.json()
-            ) // parse JSON from request
-            .then(resultData => {
-                setGhData(resultData)
-
-            }) // set data for the number of stars
-    }, [])
-
-
-
-    if (ghData === 0) {
-        return (
-            <div className="grid grid-cols-1 gap-3">
-                <h1 className="font-bold text-gray-800 text-center text-4xl mt-2 mb-2 ">Loading...</h1>
-            </div>
-
-        )
-    }
-
-    const contributors = [...ghData.data]
-    contributors.sort((a, b) => (b.contributions > a.contributions) ? 1 : -1)
-
-    return (
-        <ul className="p-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-3 m-auto text-gray-800 max-w-5xl">
-            {contributors.map((contributor) => (
-                <li
-                    id={contributor.id}
-                    key={contributor.id}
-                    className="rounded overflow-hidden shadow-lg flex flex-col text-center"
+const DetailedContributors = ({ contributors }) => (
+    <ul className="w-full m-auto p-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 text-gray-800 max-w-5xl">
+        {contributors.map((contributor) => (
+            <li id={contributor.id}
+                key={contributor.id} className="rounded overflow-hidden shadow-lg flex flex-col text-center transform transition duration-500 hover:scale-105 hover:bg-blue-100">
+                <button
                     onClick={() => {
-                        window.open(contributor.htmlUrl, "_blank", "noopener noreferrer")
+                        window.open(contributor.html_url, "_blank", "noopener noreferrer")
                     }}
                     onKeyDown={event => {
                         if (event.key === "Enter") {
                             window.open(
-                                contributor.htmlUrl,
+                                contributor.html_url,
                                 "_blank",
                                 "noopener noreferrer"
                             )
                         }
                     }}
                     tabIndex="0"
-                    // eslint-disable-next-line jsx-a11y/no-noninteractive-element-to-interactive-role
-                    role="button"
+                    type="button"
+                    className="transform transition duration-500
+                    focus:bg-blue-50"
                 >
-                    <img className="w-full" src={contributor.avatarUrl} alt={contributor.login} />
+                <img className="w-full rounded-full block p-4" src={contributor.avatar_url} alt={contributor.login} />
                     <div className="px-2 py-4 flex-1">
-                        <h2 className="font-bold mb-2">{contributor.login} ({contributor.contributions})</h2>
+                        <h2 className="font-bold mb-2 text-base">{contributor.login} <span className="text-gray-500 text-base ">({contributor.contributions})</span></h2>
 
                     </div>
-                </li>
-            ))
-            }
-        </ul>
-    )
-};
+                </button>
+            </li>
+        ))
+        }
+    </ul>
+
+);
 
 export default DetailedContributors;
